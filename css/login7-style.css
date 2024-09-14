@@ -33,16 +33,35 @@
 /* 02. Common CSS */
 /*--------------------*/
 
-body, 
-html {
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
   background-color: #f0f2f5;
-  background-image: url('../images/computer-1867758_1920-min.jpg');
-  background-repeat: no-repeat;
-  background-position: 100%;
+  position: relative;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #44525f;
+}
+
+#bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
   background-size: cover;
-  height: 100vh;
-  overflow-x: hidden;
-  text-rendering: optimizeLegibility;
+  transition: 1s opacity;
+  object-fit: cover;
 }
 
 body {
